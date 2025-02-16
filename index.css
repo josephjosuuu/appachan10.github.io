@@ -1,11 +1,11 @@
 body {
-        display: flex;
-        margin: 0;
-        /*align-items: left;
-        justify-content: left;*/
-        height: 100vh;
-      }
-
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  min-height: 100vh;
+  justify-content: flex-end; /* Ensures content aligns to the bottom */
+  align-items: center; /* Centers horizontally */
+}
 canvas {
         width:50vmin;
         height:50vmin;
@@ -19,9 +19,7 @@ canvas {
 
 img {
   width: 60%;
-  height: 60%;
-  position: fixed;
+  height: auto; /* Ensures the correct aspect ratio */
+  position: relative; /* Stays at the bottom of the page */
   bottom: 0;
-  left: 50%;
-  transform: translateX(-50%) rotate(0deg);
 }
