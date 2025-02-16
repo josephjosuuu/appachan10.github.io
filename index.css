@@ -17,12 +17,11 @@ canvas {
   width: 10px;
 }
 
-img{
+img {
   width: 60%;
-  height:  60%;
+  height: 60%;
   position: fixed;
   bottom: 0;
-  right: 0;
-  top: 0px;
-  transform: rotate(180deg);
+  left: 50%;
+  transform: translateX(-50%);
 }
